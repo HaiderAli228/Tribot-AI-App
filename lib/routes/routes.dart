@@ -3,6 +3,7 @@ import 'package:tribot/routes/routes_name.dart';
 import 'package:tribot/view/chat_view.dart';
 import 'package:tribot/view/image_generator_view.dart';
 import 'package:tribot/view/splash_view.dart';
+import 'package:tribot/view/translator_view.dart';
 
 import '../view/home_view.dart';
 
@@ -15,6 +16,8 @@ class Routes {
         return _createRoute(const ChatView());
       case RoutesName.imageGeneratorScreen:
         return _createRoute(const ImageGeneratorView());
+      case RoutesName.translatorScreen:
+        return _createRoute(const TranslatorView());
       case RoutesName.splashScreen:
         return _createRoute(const SplashView());
       default:
